@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/close_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/close_bg">
+
+
+    <TextView
+        android:id="@+id/txt_confirm"
+        android:layout_width="0dp"
+        android:layout_height="46.5dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="98dp"
+        android:background="@drawable/confirm"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/txt_cancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_cancel"
+        android:layout_width="0dp"
+        android:layout_height="46.5dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="106dp"
+        android:background="@drawable/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_confirm" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="24dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/anim"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

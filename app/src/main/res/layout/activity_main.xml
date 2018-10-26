@@ -1,37 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/aa"
+    android:background="@drawable/mian_bg"
     android:gravity="center"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
 
-    <ProgressBar
-        android:id="@+id/loading"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:indeterminateBehavior="repeat"
-        android:indeterminateDrawable="@drawable/anim"
-        android:visibility="gone" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btn"
+        <TextView
+            android:id="@+id/txt_test"
+            android:layout_width="340.5dp"
+            android:layout_height="136.5dp"
+            android:background="@drawable/test" />
+
+        <TextView
+            android:id="@+id/txt_close"
+            android:layout_width="140.5dp"
+            android:layout_height="136.5dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/close" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="打开" />
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
-    <SurfaceView
-        android:id="@+id/surfaceView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
+        <TextView
+            android:id="@+id/txt_set"
+            android:layout_width="245.5dp"
+            android:layout_height="136.5dp"
+            android:background="@drawable/set" />
 
-    <ImageView
-        android:id="@+id/iv_show"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
+        <TextView
+            android:id="@+id/txt_query"
+            android:layout_width="235.5dp"
+            android:layout_height="136.5dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/query" />
+    </LinearLayout>
+
+
 </LinearLayout>
