@@ -6,6 +6,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -13,20 +14,15 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
 
-
 public class BaseActivity extends Activity {
     private static final String TAG = "BaseActivity";
-
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         hideSystemUIMenu();
-
     }
-
-
 
 
     //Activity创建或者从后台重新回到前台时被调用
@@ -139,5 +135,24 @@ public class BaseActivity extends Activity {
             imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
         }
 
+    }
+
+    // 用来计算返回键的点击间隔时间
+    private long exitTime = 0;
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_BACK:
+//                if ((System.currentTimeMillis() - exitTime) > 2000) {
+//                    //弹出提示，可以有多种方式
+//                    Toast.makeText(getApplicationContext(), "再按一次退出", Toast.LENGTH_SHORT).show();
+//                    exitTime = System.currentTimeMillis();
+//                } else {
+//                    finish();
+//                }
+                return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

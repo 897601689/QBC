@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.qbc.R;
+import com.qbc.widget.PushToast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,7 +33,6 @@ public class MainActivity extends BaseActivity {
 
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
     }
 
 
@@ -56,12 +56,15 @@ public class MainActivity extends BaseActivity {
         Intent intent;
         switch (view.getId()) {
             case R.id.txt_test:
+                intent = new Intent(this, TestActivity.class);
+                startActivity(intent);
                 break;
             case R.id.txt_close:
                 intent = new Intent(this, CloseActivity.class);
                 startActivity(intent);
                 break;
             case R.id.txt_set:
+
                 break;
             case R.id.txt_query:
                 break;

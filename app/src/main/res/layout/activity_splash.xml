@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_bg">
 
-    <ProgressBar
-        android:id="@+id/loading"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="24dp"
-        android:indeterminateBehavior="repeat"
-        android:indeterminateDrawable="@drawable/anim"
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/AVLoadingIndicatorView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="57dp"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

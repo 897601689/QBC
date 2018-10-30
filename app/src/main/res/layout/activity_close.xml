@@ -30,17 +30,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txt_confirm" />
 
-    <ProgressBar
+    <com.wang.avi.AVLoadingIndicatorView
         android:id="@+id/loading"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="24dp"
-        android:indeterminateBehavior="repeat"
-        android:indeterminateDrawable="@drawable/anim"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

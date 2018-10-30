@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mian_bg2"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="56dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/test_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="检测"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <!-- 输入框 -->
+    <LinearLayout
+        android:id="@+id/layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="450.5dp"
+            android:layout_height="45.5dp"
+            android:background="@drawable/text_box"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="ID"
+                android:textColor="#7F8090"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edit_id"
+                android:layout_width="340dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/text_box"
+                android:ems="12"
+                android:inputType="number"
+                android:maxLength="12"
+                android:textColor="#7F8090"
+                android:textSize="30sp"
+                android:text="20181030001"
+                tools:text="20181030001" />
+
+            <TextView
+                android:id="@+id/del"
+                android:layout_width="37dp"
+                android:layout_height="25dp"
+                android:background="@drawable/del" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_btn"
+            android:layout_width="125.5dp"
+            android:layout_height="45.5dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_test" />
+    </LinearLayout>
+
+    <!-- 提示框 -->
+    <LinearLayout
+        android:id="@+id/layout_mg"
+        android:layout_width="548dp"
+        android:layout_height="207dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否已将试管放入？"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="126.5dp"
+                android:layout_height="46dp"
+                android:background="@drawable/yes" />
+
+            <TextView
+                android:id="@+id/on"
+                android:layout_width="126.5dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="80dp"
+                android:background="@drawable/no" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 等待框 -->
+    <LinearLayout
+        android:id="@+id/layout_load"
+        android:layout_width="548dp"
+        android:layout_height="207dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="数据分析中"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:indicatorName="BallPulseIndicator" />
+    </LinearLayout>
+
+</LinearLayout>
