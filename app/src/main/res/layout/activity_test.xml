@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mian_bg2"
+    android:background="@drawable/main_bg2"
     android:orientation="vertical">
 
     <!-- 标题 -->
@@ -12,14 +12,14 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="56dp">
 
         <TextView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:background="@drawable/test_ico" />
 
         <TextView

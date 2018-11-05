@@ -26,6 +26,8 @@
         <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.CloseActivity" />
         <activity android:name=".activity.TestActivity"/>
+        <activity android:name=".activity.SetActivity" />
+        <activity android:name=".activity.QueryActivity" />
     </application>
 
 </manifest>

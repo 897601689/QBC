@@ -64,7 +64,8 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
                 break;
             case R.id.txt_set:
-
+                intent = new Intent(this, SetActivity.class);
+                startActivity(intent);
                 break;
             case R.id.txt_query:
                 break;
